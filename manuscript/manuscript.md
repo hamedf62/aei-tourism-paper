@@ -12,7 +12,7 @@ h.fallah@sau.ac.ir
 
 *Running head:* AI in tourism work: behavioral evidence
 
-*Word count:* ~7,500 (main text, excluding references, tables, and figure captions)
+*Word count:* ~4,200 main text (excluding abstract, references, tables, and figure captions); ~6,700 total including tables and appendices
 
 ---
 
