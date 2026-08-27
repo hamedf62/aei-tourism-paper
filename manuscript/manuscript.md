@@ -28,11 +28,11 @@ This study provides the first behavioral evidence on artificial intelligence (AI
 
 ## 1. Introduction
 
-Tourism is one of the world's largest service industries, supporting roughly one in ten jobs globally and contributing about 10% of world GDP (World Bank, 2025; World Travel & Tourism Council [WTTC], 2025). It is also, by most accounts, among the industries most exposed to artificial intelligence (AI). Since 2023, a fast-growing literature has examined how generative AI reshapes tourism demand, traveler behavior, and service design (Doğru et al., 2023; Dwivedi et al., 2023; Nannelli et al., 2023; Tussyadiah, 2020). Yet almost everything economists know about AI *adoption in tourism work* comes from surveys, expert assessments of occupational task descriptions, or firm-level case studies. No existing study measures what tourism workers actually do with AI systems.
+Tourism is one of the world's largest service industries, supporting roughly one in ten jobs globally and contributing about 10% of world GDP (World Bank, 2025; World Travel & Tourism Council [WTTC], 2025). It is also, by most accounts, among the industries most exposed to artificial intelligence (AI). Since 2023, a fast-growing literature has examined how generative AI reshapes tourism demand, traveler behavior, and service design (Doğru et al., 2025; Dwivedi et al., 2023; Nannelli et al., 2023; Tussyadiah, 2020). Yet almost everything economists know about AI *adoption in tourism work* comes from surveys, expert assessments of occupational task descriptions, or firm-level case studies. No existing study measures what tourism workers actually do with AI systems.
 
 This paper takes a step in that direction using a new kind of evidence: the Anthropic Economic Index (AEI), an open dataset constructed from millions of privacy-protected Claude conversations and mapped to U.S. O*NET task categories and SOC occupations (Anthropic, 2026; Appel et al., 2025). The AEI is behavioral. Each observation is a real conversation, classified by occupation and task, not a self-report of intentions or a subjective expert rating of "exposure." For tourism economics, this offers something survey instruments cannot: a direct, continuously updated record of how workers in tourism-related occupations use a frontier AI system, observed across more than 100 countries.
 
-The paper asks three questions. (1) How intensively are tourism-typical occupations represented in AI conversations, and how does this vary across countries? (2) What economic and tourism-specific conditions co-vary with tourism-occupation AI usage? (3) What is the *character* of AI use in tourism occupations—automation or augmentation, human-replaceable or human-only, work or personal? Each question maps onto a distinct literature: the first to occupational exposure studies (Eloundou et al., 2023; Felten et al., 2021; Frey & Osborne, 2017), the second to the economics of technology diffusion in services (Acemoglu, 2024; Comin & Hobijn, 2010), and the third to the automation-versus-augmentation debate in labor economics (Acemoglu & Restrepo, 2019; Brynjolfsson et al., 2024) and to AI-in-tourism research (Ivanov & Webster, 2019; Tussyadiah, 2020).
+The paper asks three questions. (1) How intensively are tourism-typical occupations represented in AI conversations, and how does this vary across countries? (2) What economic and tourism-specific conditions co-vary with tourism-occupation AI usage? (3) What is the *character* of AI use in tourism occupations—automation or augmentation, human-replaceable or human-only, work or personal? Each question maps onto a distinct literature: the first to occupational exposure studies (Eloundou et al., 2023; Felten et al., 2021; Frey & Osborne, 2017), the second to the economics of technology diffusion in services (Acemoglu, 2024; Comin & Hobijn, 2010), and the third to the automation-versus-augmentation debate in labor economics (Acemoglu & Restrepo, 2019; Brynjolfsson et al., 2025) and to AI-in-tourism research (Ivanov & Webster, 2019; Tussyadiah, 2020).
 
 The contribution is fourfold. First, it is—to the author's knowledge after a systematic search of the literature (Section 2.3)—the first study to combine behavioral AI-usage data with tourism economics. Prior work using the AEI has examined aggregate macroeconomic adoption patterns (Appel et al., 2025; Yildirim, 2026) and regional U.S. patterns (Noll et al., 2025), but not tourism occupations or tourism development. Second, it introduces a transparent, fully reproducible measure—tourism SOC intensity—that derives from published, auditable data rather than a constructed survey index. Third, it documents an occupational-structure pattern that runs against the intuitive "rich countries adopt AI faster" prior, while demonstrating through systematic robustness checks exactly how far that pattern can be trusted—a methodological contribution in itself. Fourth, it demonstrates a monitoring framework that tourism scholars and statistical agencies can replicate each AEI release without proprietary data or fieldwork.
 
@@ -50,7 +50,7 @@ Each tradition has known weaknesses that shape what claims it can support. Expos
 
 ### 2.2 AI in tourism research
 
-Tourism scholars have produced a substantial literature on AI in the industry, summarized in recent reviews (Filieri et al., 2022; Nannelli et al., 2023; Tussyadiah, 2020). Four strands are relevant here. First, *service automation*: Ivanov and Webster (2019) and successors analyze robot and AI adoption economics in travel, tourism, and hospitality, with emphasis on cost-benefit calculus for specific service tasks. Second, *smart tourism*: Gretzel et al. (2015) and Buhalis and Leung (2017) established the ecosystem view of connected, data-driven destinations—AI as infrastructure rather than labor substitute. Third, *consumer-facing generative AI*: a wave of 2023–2025 papers studies tourist acceptance of ChatGPT-style tools for planning and in-trip use (e.g., Duong et al., 2024; Pham et al., 2024; Stergiou & Nella, 2024), consistently finding higher acceptance for informational than for transactional tasks. Fourth, *industry-level foresight*: Doğru et al. (2023) frame generative AI's disruption pathways for hospitality and tourism research, and Çolak (2023) offers an early descriptive look at AI's impact on tourism employment structure.
+Tourism scholars have produced a substantial literature on AI in the industry, summarized in recent reviews (Knani et al., 2022; Nannelli et al., 2023; Tussyadiah, 2020). Four strands are relevant here. First, *service automation*: Ivanov and Webster (2019) and successors analyze robot and AI adoption economics in travel, tourism, and hospitality, with emphasis on cost-benefit calculus for specific service tasks. Second, *smart tourism*: Gretzel et al. (2015) and Buhalis and Leung (2018) established the ecosystem view of connected, data-driven destinations—AI as infrastructure rather than labor substitute. Third, *consumer-facing generative AI*: a wave of 2023–2025 papers studies tourist acceptance of ChatGPT-style tools for planning and in-trip use (e.g., Duong et al., 2025; Pham et al., 2024; Stergiou & Nella, 2024), consistently finding higher acceptance for informational than for transactional tasks. Fourth, *industry-level foresight*: Doğru et al. (2025) frame generative AI's disruption pathways for hospitality and tourism research, and Çolak (2023) offers an early descriptive look at AI's impact on tourism employment structure.
 
 Across all four strands, evidence about *tourism workers* comes from surveys of managers or employees, vignette studies, and adoption intentions. No strand observes the labor side behaviorally at scale. This is the gap the present paper addresses.
 
@@ -62,7 +62,7 @@ A systematic search (Appendix A) across OpenAlex, Google Scholar, SSRN, and arXi
 
 Two framings organize the analysis. The first is the *diffusion-composition* distinction. Aggregate AI adoption statistics conflate two margins: the intensive margin (how much AI is used per worker) and the compositional margin (which occupations exist in an economy). Tourism economies differ systematically on the compositional margin—tourism occupations are a larger slice of employment in developing economies—so occupational composition can generate adoption patterns that look like reversed diffusion gradients. Distinguishing the two margins is essential for policy: a high tourism-SOC AI share in a low-income country may reflect few AI conversations overall spread thinly, not deep technological upgrading of tourism work.
 
-The second framing is the *automation-augmentation* distinction (Acemoglu & Restrepo, 2019; Brynjolfsson et al., 2024). The AEI classifies each conversation by collaboration bucket and by whether a human could complete the task unaided ("human-only ability"). In tourism, where the core product is co-produced human service (Tussyadiah, 2020), the share of AI use that automates rather than augments is a first-order economic question: automation-bearing use substitutes for labor tasks; augmentation-bearing use complements them. The AEI's task-level metrics allow this decomposition without any survey instrument.
+The second framing is the *automation-augmentation* distinction (Acemoglu & Restrepo, 2019; Brynjolfsson et al., 2025). The AEI classifies each conversation by collaboration bucket and by whether a human could complete the task unaided ("human-only ability"). In tourism, where the core product is co-produced human service (Tussyadiah, 2020), the share of AI use that automates rather than augments is a first-order economic question: automation-bearing use substitutes for labor tasks; augmentation-bearing use complements them. The AEI's task-level metrics allow this decomposition without any survey instrument.
 
 ## 3. Data and measurement
 
@@ -166,7 +166,7 @@ This paper introduced behavioral evidence on AI use in tourism occupations using
 
 ## References
 
-Acemoglu, D. (2024). The simple macroeconomics of AI. *Economic Policy, 39*(121), 13–58. https://doi.org/10.1093/epolic/eiae042
+Acemoglu, D. (2024). The simple macroeconomics of AI. *Economic Policy, 40*(121), 13–58. https://doi.org/10.1093/epolic/eiae042
 
 Acemoglu, D., & Restrepo, P. (2019). Automation and new tasks: How technology displaces and reinstates labor. *Journal of Economic Perspectives, 33*(2), 3–30. https://doi.org/10.1257/jep.33.2.3
 
@@ -174,19 +174,19 @@ Anthropic. (2026, June 26). *Anthropic Economic Index report: Cadences* [Data do
 
 Appel, R., McCrory, P., Tamkin, A., McCain, M., Neylon, T., & Stern, M. (2025). *Anthropic Economic Index report: Uneven geographic and enterprise AI adoption*. arXiv. https://doi.org/10.48550/arxiv.2511.15080
 
-Athey, S. (2017). Beyond prediction: Using big data for policy problems. *Science, 355*(6324), 483–485. https://doi.org/10.1126/science.aal4321
-
-Brynjolfsson, E., Li, D., & Raymond, L. (2024). Generative AI at work. *Quarterly Journal of Economics, 140*(2), 889–942. https://doi.org/10.1093/qje/qjae044
+Brynjolfsson, E., Li, D., & Raymond, L. (2025). Generative AI at work. *Quarterly Journal of Economics, 140*(2), 889–942. https://doi.org/10.1093/qje/qjae044
 
 Buhalis, D., & Leung, R. (2018). Smart hospitality—Interconnectivity and interoperability towards an ecosystem. *International Journal of Hospitality Management, 71*, 41–50. https://doi.org/10.1016/j.ijhm.2017.11.011
 
-Çolak, O. (2023). The impact of artificial intelligence on the employment structure of the tourism industry. *İktisadi İdari ve Siyasal Araştırmalar Dergisi, 8*(22). https://doi.org/10.25204/iktisad.1347642
+Çolak, O. (2023). The impact of artificial intelligence on the employment structure of the tourism industry. *İktisadi İdari ve Siyasal Araştırmalar Dergisi, 8*(22), 919–939. https://doi.org/10.25204/iktisad.1347642
 
 Comin, D., & Hobijn, B. (2010). An exploration of technology diffusion. *American Economic Review, 100*(5), 2031–2059. https://doi.org/10.1257/aer.100.5.2031
 
-Doğru, T., Line, N., Mody, M., & Hanks, L. (2023). Generative artificial intelligence in the hospitality and tourism industry: Developing a framework for future research. *Journal of Hospitality & Tourism Research*. https://doi.org/10.1177/10963480231188663
+Dwivedi, Y. K., Pandey, N., Currie, W. L., & Micu, A. (2023). Opinion paper: "So what if ChatGPT wrote it?" Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy. *International Journal of Information Management, 71*, 102642. https://doi.org/10.1016/j.ijinfomgt.2023.102642
 
-Duong, C. D., Nguyen, T. H., & Nguyen, T. T. H. (2024). Using generative artificial intelligence (ChatGPT) for travel purposes: Service quality, satisfaction, and loyalty. *Tourism Review*. https://doi.org/10.1108/tr-01-2024-0027
+Doğru, T., Line, N., Mody, M., Hanks, L., Abbott, J., Açikgöz, N. N., Assaf, A., Bakir, S., Berbekova, A., Bilgihan, A., Dalton, A., Erkmen, E., Geronasso, A. H., Gomez, S., Graves, J., Iskender, İ., Ivanov, S., Kizildag, M., Lee, K., … Zhang, Y. (2025). Generative artificial intelligence in the hospitality and tourism industry: Developing a framework for future research. *Journal of Hospitality & Tourism Research, 49*(2), 235–253. https://doi.org/10.1177/10963480231188663
+
+Duong, C. D., Nguyen, T. H., Ngo, T. T. A., Pham, V. H., Vu, T. T., & Dang, T. P. T. (2025). Using generative artificial intelligence (ChatGPT) for travel purposes: Parasocial interaction and tourists' continuance intention. *Tourism Review, 80*(4), 813–827. https://doi.org/10.1108/tr-01-2024-0027
 
 Eloundou, T., Manning, S., Mishkin, P., & Rock, D. (2023). *GPTs are GPTs: An early look at the labor market impact potential of large language models*. arXiv. https://doi.org/10.48550/arxiv.2303.10130
 
@@ -194,7 +194,7 @@ Fallah Tafti, H. (2026). *Replication package: AI in tourism work* [Computer sof
 
 Felten, E., Raj, M., & Seamans, R. (2021). Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses. *Strategic Management Journal, 42*(12), 2195–2217. https://doi.org/10.1002/smj.3286
 
-Filieri, R., Raguseo, E., & Vitari, C. (2022). Artificial intelligence in hospitality and tourism: State of the art and future research agenda. *Electronic Markets, 32*, 2325–2351. https://doi.org/10.1007/s12525-022-00577-4
+Knani, M., Echchakoui, S., & Ladhari, R. (2022). Artificial intelligence in tourism and hospitality: Bibliometric analysis and research agenda. *International Journal of Hospitality Management, 107*, 103317. https://doi.org/10.1016/j.ijhm.2022.103317
 
 Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? *Technological Forecasting and Social Change, 114*, 254–280. https://doi.org/10.1016/j.techfore.2016.08.019
 
@@ -202,13 +202,13 @@ Gretzel, U., Sigala, M., Xiang, Z., & Koo, C. (2015). Smart tourism: Foundations
 
 Ivanov, S., & Webster, C. (Eds.). (2019). *Robots, artificial intelligence and service automation in travel, tourism and hospitality*. Emerald. https://doi.org/10.1108/9781787566873
 
-Kleinberg, J., Ludwig, J., Mullainathan, S., & Obermeyer, Z. (2015). Prediction policy problems. *American Economic Review, 105*(5), 491–495. https://doi.org/10.1257/aer.p20151023
+Knani, M., Echchakoui, S., & Ladhari, R. (2022). Artificial intelligence in tourism and hospitality: Bibliometric analysis and research agenda. *International Journal of Hospitality Management, 107*, 103317. https://doi.org/10.1016/j.ijhm.2022.103317
 
-Nannelli, M., Capone, F., & Lazzeretti, L. (2023). Artificial intelligence in hospitality and tourism: State of the art and future research agenda. *European Planning Studies, 31*(12), 2459–2480. https://doi.org/10.1080/09654313.2023.2180321
+Nannelli, M., Capone, F., & Lazzeretti, L. (2023). Artificial intelligence in hospitality and tourism: State of the art and future research agenda. *European Planning Studies, 31*(7), 1325–1344. https://doi.org/10.1080/09654313.2023.2180321
 
 Noll, B., Cason, T., Cheche, O. K., Brown, W., & Peet, E. (2025). *Artificial intelligence and the Anthropic Economic Index in the Mountain West*. University of Nevada, Las Vegas. https://www.unlv.edu
 
-Pham, H. C., Duong, C. D., & Van, H. T. T. (2024). What drives tourists' continuance intention to use ChatGPT for travel purposes? *Journal of Retailing and Consumer Services, 79*, 103758. https://doi.org/10.1016/j.jretconser.2024.103758
+Pham, H. C., Duong, C. D., & Nguyen, G. K. H. (2024). What drives tourists' continuance intention to use ChatGPT for travel purposes? *Journal of Retailing and Consumer Services, 79*, 103758. https://doi.org/10.1016/j.jretconser.2024.103758
 
 Stergiou, D. P., & Nella, A. (2024). ChatGPT and tourist decision-making: An accessibility–diagnosticity theory perspective. *International Journal of Tourism Research*. https://doi.org/10.1002/jtr.2757
 
