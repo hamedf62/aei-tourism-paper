@@ -1,0 +1,23 @@
+node_name,collaboration_bucket_augmentation_pct,collaboration_bucket_automation_pct,tourism_flag
+Architecture and Engineering,55.11,44.89,False
+"Arts, Design, Entertainment, Sports, and Media",64.15,35.85,True
+Building and Grounds Cleaning and Maintenance,52.94,47.06,False
+Business and Financial Operations,57.39,42.61,False
+Community and Social Service,59.99,40.01,False
+Computer and Mathematical,36.1,63.9,False
+Construction and Extraction,33.79,66.21,False
+Educational Instruction and Library,57.23,42.77,False
+"Farming, Fishing, and Forestry",34.93,65.07,False
+Food Preparation and Serving Related,50.87,49.13,True
+Healthcare Practitioners and Technical,58.38,41.62,False
+Healthcare Support,60.92,39.08,False
+"Installation, Maintenance, and Repair",30.56,69.44,False
+Legal,65.43,34.57,False
+"Life, Physical, and Social Science",59.54,40.46,False
+Management,56.1,43.9,False
+Office and Administrative Support,43.98,56.02,False
+Personal Care and Service,44.13,55.87,True
+Production,36.28,63.72,False
+Protective Service,26.42,73.58,False
+Sales and Related,56.21,43.79,True
+Transportation and Material Moving,48.26,51.74,False
