@@ -1,0 +1,13 @@
+node_name,ai_autonomy_mean,collaboration_bucket_augmentation_pct,collaboration_bucket_automation_pct,human_only_ability_pct,multitasking_pct,pct,use_case_work_pct
+Waiters and Waitresses,2.73,40.14,59.86,99.53,29.75,0.17,2.82
+Food Service Managers,2.86,47.95,52.05,95.93,20.49,0.13,33.7
+"Meeting, Convention, and Event Planners",3.03,63.39,36.61,83.72,31.67,0.12,75.83
+Reservation and Transportation Ticket Agents and Travel Clerks,2.36,67.1,32.9,98.64,19.46,0.08,18.23
+Tour Guides and Escorts,2.69,35.92,64.08,98.42,14.85,0.03,26.64
+Lodging Managers,2.74,38.94,61.06,95.21,21.36,0.03,39.02
+Concierges,2.78,23.23,76.77,100.0,18.18,0.01,6.22
+Chefs and Head Cooks,2.75,60.36,39.64,95.38,24.21,0.01,24.37
+Flight Attendants,2.32,28.29,71.71,97.69,4.23,0.01,1.92
+"Cooks, Restaurant",2.59,28.53,71.47,98.13,14.4,0.01,14.13
+Travel Agents,2.84,38.93,61.07,99.05,7.62,0.01,7.62
+"Hotel, Motel, and Resort Desk Clerks",2.6,57.71,42.29,98.91,29.89,0.0,7.07
